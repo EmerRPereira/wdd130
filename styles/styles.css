@@ -46,7 +46,7 @@ main img {
 }
 
 p {
-    padding: 10px;
+    padding: 0;
 }
 
 footer {
@@ -54,4 +54,5 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 }
+
 
