@@ -102,9 +102,17 @@ nav, p, section, article {
 
 /* hero article image: don't float, use block and responsive sizing */
 .hero article img {
+<<<<<<< HEAD:wwr/Styles/rafting.css
     position: float;
     width: 100%;
     height: auto;
     display: block;
     border-radius: 6px;
 }
+=======
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+>>>>>>> c4945e60649644a0e0ba238b87fd809bd202b6da:wwr/styles/rafting.css
