@@ -62,7 +62,7 @@ nav, p, section, article {
     flex: 1 1 320px;
     max-width: 50%;
 }
-.hero article {
+.hero-article {
     position: absolute;
     padding: 1rem;
     border-radius: 8px;
@@ -71,7 +71,7 @@ nav, p, section, article {
 }
 
 /* hero article image: don't float, use block and responsive sizing */
-.hero article img {
+.article-img {
     float: right;
     margin: 0 0 10px 10px;
     width: 100%;
