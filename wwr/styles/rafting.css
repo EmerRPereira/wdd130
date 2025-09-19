@@ -67,7 +67,7 @@ nav, p, section, article {
     padding: 1rem;
     border-radius: 8px;
     flex: 1 1 280px;
-    color: #fff;
+    color: var(--accent2-color);
 }
 
 /* hero article image: don't float, use block and responsive sizing */
