@@ -102,7 +102,6 @@ nav, p, section, article {
 
 /* hero article image: don't float, use block and responsive sizing */
 .hero article img {
-    position: float;
     float: right;
     margin: 0 0 10px 10px;
     width: 100%;
