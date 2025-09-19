@@ -10,6 +10,7 @@
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    display: flex;
 }
 
 * {
@@ -46,4 +47,61 @@ nav, p, section, article {
     width: 32px;
     height: auto;
     margin: 0 10px;
+}
+
+/* HERO - use as background image; content overlays naturally (no absolute h1/article) */
+.hero {
+  position: relative;
+  background-image: url('../images/erp-rafting47-600.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  padding: 4rem 2rem;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* dark overlay so text is readable */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--hero-overlay);
+  pointer-events: none;
+}
+
+.hero .hero-inner {
+  position: relative; /* keep above overlay */
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 100%;
+  align-items: center;
+}
+
+/* H1 and article sit naturally (no absolute positioning) */
+.hero h1 {
+  font-size: 2.2rem;
+  margin: 0;
+  flex: 1 1 320px;
+  max-width: 50%;
+}
+.hero article {
+  background: rgba(255,255,255,0.06);
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1 1 280px;
+  color: #fff;
+}
+
+/* hero article image: don't float, use block and responsive sizing */
+.hero article img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
 }
