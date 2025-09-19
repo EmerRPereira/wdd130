@@ -52,7 +52,7 @@ nav, p, section, article {
 /* HERO - use as background image; content overlays naturally (no absolute h1/article) */
 .hero {
     position: relative;
-/*    background-image: url('../images/erp-rafting47-600.jpg'); */
+/*    background-image: url('../images/erp-rafting47-600.jpg'); 
     background-size: cover;
     background-position: center center;
     color: #fff;
@@ -62,26 +62,26 @@ nav, p, section, article {
     align-items: center;
     border-radius: 8px;
     overflow: hidden;
-}
+} */
 
-/* dark overlay so text is readable */
+/* dark overlay so text is readable
 .hero::after {
     content: "";
     position: absolute;
     inset: 0;
     background: var(--accent1-color);
     pointer-events: none;
-}
+} */
 
-.hero .hero-inner {
-    position: relative; /* keep above overlay */
+/*.hero .hero-inner {
+    position: relative;  keep above overlay
     z-index: 1;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     width: 100%;
     align-items: center;
-}
+} */
 
 /* H1 and article sit naturally (no absolute positioning) */
 .hero h1 {
