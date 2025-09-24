@@ -87,12 +87,11 @@ nav, p, section, article {
     color: var(--accent2-color);
 }
 
-
 /* hero article image: don't float, use block and responsive sizing */
 .article-img {
     float: right;
     margin: 0 0 10px 10px;
-    width: 40%; /* ou outro valor responsivo */
+    width: 40%; /* or other value responsive */
     height: auto;
     border-radius: 6px;
 }
