@@ -37,7 +37,11 @@ nav a {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center
+}
+
+nav ul li {
+    margin: 0 10px;
 }
 
 h1 {
