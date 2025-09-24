@@ -34,6 +34,11 @@ nav a {
     color: #fff; /% shorthand for white %/
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
 h1 {
     color: darkblue;
 }
