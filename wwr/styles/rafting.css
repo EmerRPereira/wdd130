@@ -139,3 +139,15 @@ footer .socialmedia {
     height: auto;
 }
 
+.history {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
