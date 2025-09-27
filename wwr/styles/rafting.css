@@ -13,9 +13,12 @@
     padding: 0;
 }
 
+header li a {
+    color:aliceblue;
+}
+
 header {
     background-color: var(--primary-color);
-    color: var(--accent2-color);
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
@@ -29,18 +32,16 @@ header img {
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
 }
 
 header nav ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    gap: 20px;
 }
 
 header, footer, main {
-    color: #fff;
+    color: #060606;
     max-width: 840px;
     margin: 0 auto;
     width: 100%;
@@ -69,7 +70,7 @@ nav, p, section, article {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 40px;
     margin: 0;
     padding: 0;
 }
@@ -77,7 +78,7 @@ nav ul {
 footer {
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    padding: 20px;
+    padding: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,6 +103,12 @@ footer .socialmedia {
 /* HERO - use as background image; content overlays naturally (no absolute h1/article) */
 .hero {
     position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 .hero h1 {
@@ -131,3 +138,4 @@ footer .socialmedia {
     max-width: 150px;
     height: auto;
 }
+
