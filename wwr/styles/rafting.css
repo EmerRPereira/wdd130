@@ -103,13 +103,18 @@ footer .socialmedia {
 /* HERO - use as background image; content overlays naturally (no absolute h1/article) */
 .hero {
     position: relative;
+    background-image: url("images/erp-rafting47-600.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    height: 400px; /* ajuste conforme desejar */
 }
 
-.hero img {
+/*.hero img {
     width: 100%;
     height: auto;
     border-radius: 8px;
-}
+}*/
 
 .hero h1 {
     position: absolute;
