@@ -103,8 +103,9 @@ footer .socialmedia {
 /* HERO - use as background image; content overlays naturally (no absolute h1/article) */
 .hero {
     display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza o conteúdo horizontal */
     position: relative;
-    /*ackground-image: url("https://github.com/EmerRPereira/wdd130/blob/main/wwr/images/erp-rafting47-600.jpg");*/
     background-size: cover;
     background-position: center;
     border-radius: 8px;
@@ -133,13 +134,14 @@ footer .socialmedia {
 
 .hero-article {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    max-width: 50%;
+    top: 400px;
+    bottom: 25px;
+    left: 350px;
+    max-width: 100%;
     padding: 1rem;
-    background: rgba(4,90,5,0.7);
-    border-radius: 8px;
-    color: var(--accent2-color);
+    background: rgba(4,90,10,0.7);
+    border-radius: 10px;
+    color: var(--accent1-color);
 }
 
 .logo {
