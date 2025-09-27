@@ -22,6 +22,11 @@ header {
     padding: 10px;
 }
 
+header img {
+    max-width: 50%;
+    height: auto;
+}
+
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
