@@ -21,13 +21,15 @@ header {
     background-color: var(--primary-color);
     position: fixed;
     top: 0;
-    left: 0;
+    left: 0; /* corrigido: não deslocar lateralmente */
     width: 100%;
-    display: grid;
-    grid-template-columns: 150px 1fr;
+    display: flex; /* layout mais simples que grid */
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 40px;
+    z-index: 1000; /* garante que o header fique sempre acima */
 }
+
 
 header img {
     width: 50%;
@@ -38,6 +40,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: var(--body-font);
+}
+
+main {
+    margin-top: 120px; /* evita que o conteúdo fique escondido atrás do header */
 }
 
 header nav ul {
@@ -109,46 +115,43 @@ footer .socialmedia {
 
 /* HERO - use as background image; content overlays naturally (no absolute h1/article) */
 .hero {
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center; /* centraliza o conteúdo horizontal */
-    position: relative;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     background-position: center;
+    height: 400px;
     border-radius: 8px;
-    height: 400px; /* ajuste conforme desejar */
+    overflow: hidden;
 }
 
 .hero img {
-    float: none;
-    display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     border-radius: 8px;
 }
 
 .hero h1 {
     position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2.2rem;
-    padding: 16px;
-    text-align: center;
-    background-color: rgba(233,196,106,0.8);
+    bottom: 40px;
+    background-color: rgba(233, 196, 106, 0.8);
+    padding: 12px 24px;
     border-radius: 6px;
+    z-index: 10; /* garante que fique acima da imagem */
 }
 
 .hero-article {
     position: absolute;
-    top: 400px;
-    bottom: 25px;
-    left: 350px;
-    max-width: 100%;
+    bottom: 0;
+    background: rgba(4, 90, 10, 0.7);
+    color: white;
     padding: 1rem;
-    background: rgba(4,90,10,0.7);
-    border-radius: 10px;
-    color: var(--accent1-color);
+    width: 100%;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
 }
 
 .logo {
