@@ -28,76 +28,51 @@ author: Emerson Ronald Pereira -->
         </nav>
     </header>
     <main>
-        <div class="hero">
-            <img src="images/erp-rafting47-600.jpg" alt="Cool Rafting" class="hero-img">
-            <h1>Waterfall Rafting</h1>
-            <article class="hero-article">
-                <p>Get ready to paddle through thrilling rapids,
-                    feel the coolness of crystal-clear waters,
-                    and finally relax in breathtaking scenery.</p>
-            </article>
-        </div>
-        <section class="history">
-            <h2>History</h2>
-            <img src="images/erp-rafting65-600.jpg" alt="Rafting History">
-            <p>In the heart of the mountains, Rafting Company Waterfall was born,
-                a company founded by nature and adrenaline enthusiasts.
-                It all began when a group of friends decided to transform
-                their passion for rivers into an unforgettable experience
-                for those seeking thrills and direct contact with nature.</p>
+        <h1>Contact Us</h1>
+
+        <section class="contact-description">
+            <h2>Waterfall Rafting</h2>
+            <p><strong>Email:</strong> info@waterfallrafting.com</p>
+            <p><strong>Phone:</strong> (41) 99235-3735</p>
+            <p><strong>Address:</strong> Honey Island, Paranaguá, Paraná</p>
+            <p>If you have any questions or would like to book a trip, please don't hesitate to reach out!</p>
         </section>
-        <section>
-            <h2>Adventure Awaits You!</h2>
-            <figure>
-                <img src="images/erp-rafting59-600.jpg" alt="Rafting Adventure">
-                <figcaption>Experience the thrill of whitewater rafting with us!</figcaption>
-            </figure>
-            <figure>
-                <img src="images/erp-rafting17-600.jpg" alt="Rafting Fun">
-                <figcaption>Fun and excitement for all ages!</figcaption>
-            </figure>
-            <figure>
-                <img src="images/erp-rafting18-600.jpg" alt="Rafting Adventure">
-                <figcaption>Experience the thrill of whitewater rafting with us!</figcaption>
-            </figure>
-            <figure>
-                <img src="images/erp-rafting10-1024.jpg" alt="Rafting Team">
-                <figcaption>Join our team of experienced guides!</figcaption>
-            </figure>
-            <figure>
-                <img src="images/erp-rafting34-600.jpg" alt="Rafting Adventure">
-                <figcaption>Experience the thrill of whitewater rafting with us!</figcaption>
-            </figure>
-            <figure>
-                <img src="images/erp-rafting12-1024.jpg" alt="Rafting Nature">
-                <figcaption>Immerse yourself in stunning natural landscapes!</figcaption>
-            </figure>
-            <figure>
-                <img src="images/erp-rafting47-600.jpg" alt="Rafting Excitement">
-                <figcaption>Feel the adrenaline rush of conquering rapids!</figcaption>
-            </figure>
-            <figure>
-                <img src="images/erp-rafting20-600.jpg" alt="Rafting Team">
-                <figcaption>Join our team of experienced guides!</figcaption>
-            </figure>
-            <figure>
-                <img src="images/erp-rafting22-600.jpg" alt="Rafting Nature">
-                <figcaption>Immerse yourself in stunning natural landscapes!</figcaption>
-            </figure>
-            <figure>
-                <img src="images/erp-rafting26-600.jpg" alt="Rafting Group">
-                <figcaption>Create unforgettable memories with friends and family!</figcaption>
-            </figure>
-            <figure>
-                <img src="images/erp-rafting29-600.jpg" alt="Rafting Excitement">
-                <figcaption>Feel the adrenaline rush of conquering rapids!</figcaption>
-            </figure>
-            <p>Our rafting trips are designed for all levels of experience,
-                from beginners to seasoned adventurers.
-                Our experienced guides will ensure your safety while
-                providing an exciting and fun experience on the water.
-                Whether you're looking for a family adventure or an adrenaline rush,
-                we have the perfect trip for you.</p>
+
+        <section class="contact-container">
+            <!-- MAPA -->
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5393.435903801577!2d-48.29756445083761!3d-25.548815212097274!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dbb960e23c1341%3A0x3d2bba6473f39242!2sPraia%20Grande!5e0!3m2!1sen!2sbr!4v1759550077765!5m2!1sen!2sbr"
+                    width="100%" height="400" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <!-- FORMULÁRIO -->
+            <form action="submit_form.php" method="post" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Message Purpose:</legend>
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit" class="submit-btn">Get in Touch</button>
+            </form>
         </section>
     </main>
     <footer>
