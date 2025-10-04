@@ -19,6 +19,10 @@ header li a {
 
 header {
     background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
@@ -31,6 +35,8 @@ header img {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: var(--body-font);
 }
 
@@ -48,8 +54,9 @@ header, footer, main {
 }
 
 h1 {
-    position: absolute;
-    top: 20px;
+    position: relative;
+    margin-top: 100px;
+    z-index: 1;
     width: 100%;
     padding: 16px;
     text-align: center;
