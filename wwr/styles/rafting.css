@@ -227,42 +227,36 @@ footer .socialmedia { display: flex;
     font-family: var(--body-font); 
 } 
 
-.contact-form fieldset { border: none; 
-    display: flex; 
-    flex-direction: column; 
-    gap: 0.5rem; 
-} 
-
-.contact-form legend { font-weight: bold; 
-    color: var(--primary-color); 
-} 
-
-.contact-form input[type="radio"], 
-.contact-form input[type="checkbox"] { 
-    margin-right: 8px; 
-} 
-
-fieldset {
+/* === Ajuste para manter os radios e textos lado a lado === */
+.contact-form fieldset {
     border: 1px solid #ccc;
     padding: 1rem;
-    margin: 1rem 0;
-}
-
-fieldset input[type="radio"] {
-    display: inline-block;
-    margin-right: 0.5rem;
-}
-
-fieldset label {
-    display: inline-block;
-    margin-right: 1.5rem;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column; /* garante uma opção por linha */
+    align-items: flex-start; /* alinha à esquerda */
+  }
+  
+  .contact-form fieldset legend {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Cada label é uma linha, com o botão e o texto lado a lado */
+  .contact-form fieldset label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem; /* espaço entre o botão e o texto */
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .contact-form fieldset input[type="radio"] {
+    appearance: auto;          /* garante o estilo padrão do sistema */
+    transform: scale(1.2);     /* uniformiza o tamanho das bolinhas */
+    margin: 0;
     vertical-align: middle;
-}
-
-
-.checkbox-label { display: flex; 
-    align-items: center; 
-} 
+  }
 
 .submit-btn { background-color: var(--primary-color); 
     color: white; 
