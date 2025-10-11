@@ -17,15 +17,15 @@ header li a { color:aliceblue;
 header { position: fixed; 
     top: 0; 
     left: 50%; 
-    transform: translateX(-50%); /* centraliza o header */ 
-    width: 100%; max-width: 840px; /* mesmo limite que o main e footer */ 
+    transform: translateX(-50%); /* centralizes the header */ 
+    width: 100%; max-width: 840px; /* same limit as main and footer */ 
     background-color: var(--primary-color); 
     color: aliceblue; 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
     padding: 10px 20px; 
-    z-index: 1000; /* sempre acima do conteúdo */ 
+    z-index: 1000; /* always above the content */ 
 } 
 
 header img.logo { width: 120px; 
@@ -38,7 +38,7 @@ body { margin: 0;
     font-family: var(--body-font); 
 } 
 
-main { margin-top: 180px; /* cria espaço abaixo do header fixo */ 
+main { margin-top: 180px; /* creates space below the fixed header */ 
     max-width: 840px; 
     margin-left: auto; 
     margin-right: auto; 
@@ -127,18 +127,18 @@ footer .socialmedia { display: flex;
 
 .hero img.hero-img { width: 100%; 
     height: 100%; 
-    object-fit: cover; /* imagem preenche sem distorcer */ 
+    object-fit: cover; /* image fills without distortion */ 
     border-radius: 10px; 
 } 
 
 .hero h1 {
     position: absolute;
-    top: 29%; /* sobe um pouco o título */
+    top: 29%; /* raises the title slightly */
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(233, 196, 106, 0.9);
     color: var(--primary-color);
-    padding: 20px 32px; /* aumenta o espaçamento interno */
+    padding: 20px 32px; /* increases internal spacing */
     border-radius: 8px;
     font-family: var(--heading-font);
     z-index: 2;
@@ -231,7 +231,7 @@ footer .socialmedia { display: flex;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 20px; /* espaçamento entre mapa e formulário */
+    gap: 20px; /* spacing between map and form */
   }
 
 main h2 {
@@ -250,14 +250,14 @@ main h2 {
     border: 0;
   }
 
-/* === Ajuste para manter os radios e textos lado a lado === */
+/* === Adjust to keep radios and texts side by side === */
 .contact-form fieldset {
     border: 1px solid #ccc;
     padding: 1rem;
     margin: 1.5rem 0;
     display: flex;
-    flex-direction: column; /* garante uma opção por linha */
-    align-items: flex-start; /* alinha à esquerda */
+    flex-direction: column; /* guarantees one option per line */
+    align-items: flex-start; /* aligns to the left */
   }
   
   .contact-form fieldset legend {
@@ -265,18 +265,18 @@ main h2 {
     margin-bottom: 0.5rem;
   }
   
-  /* Cada label é uma linha, com o botão e o texto lado a lado */
+  /* Each label is a line, with the button and text side by side. */
   .contact-form fieldset label {
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem; /* espaço entre o botão e o texto */
+    gap: 0.4rem; /* space between the button and text */
     margin-bottom: 0.5rem;
     cursor: pointer;
   }
   
   .contact-form fieldset input[type="radio"] {
-    appearance: auto;          /* garante o estilo padrão do sistema */
-    transform: scale(1.2);     /* uniformiza o tamanho das bolinhas */
+    appearance: auto;          /* guarantees the system's default style */
+    transform: scale(1.2);     /* standardizes the size of the balls */
     margin: 0;
     vertical-align: middle;
   }
