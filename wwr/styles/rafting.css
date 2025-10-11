@@ -294,13 +294,6 @@ main h2 {
 .submit-btn:hover { background-color: #043b04; 
 } 
 
-/* Responsivo
-@media (max-width: 768px) { 
-    .contact-container {
-        grid-template-columns: 1fr;
-    }
-}
-*/
 
 /* === TEAM GALLERY SECTION === */
 .team-gallery h2 {
@@ -344,20 +337,6 @@ main h2 {
     font-style: italic;
     font-size: 0.95rem;
 }
-
-/* Responsivo 
-@media (max-width: 768px) {
-    .figures-container figure {
-        width: 45%;
-    }
-}
-
-@media (max-width: 480px) {
-    .figures-container figure {
-        width: 100%;
-    }
-}
-*/
 
 /* === GRID SECTION (Home) === */
 .grid-section {
