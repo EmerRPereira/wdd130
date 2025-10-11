@@ -246,7 +246,7 @@ main h2 {
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip-path: inset(0, 0, 0, 0);
+    clip-path: inset(0 0 0 0);
     border: 0;
   }
 
