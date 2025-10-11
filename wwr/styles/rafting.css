@@ -249,7 +249,7 @@ main h2 {
     clip: rect(0, 0, 0, 0);
     border: 0;
   }
-  
+
 /* === Ajuste para manter os radios e textos lado a lado === */
 .contact-form fieldset {
     border: 1px solid #ccc;
@@ -294,12 +294,13 @@ main h2 {
 .submit-btn:hover { background-color: #043b04; 
 } 
 
-/* Responsivo */ 
+/* Responsivo
 @media (max-width: 768px) { 
     .contact-container {
         grid-template-columns: 1fr;
     }
 }
+*/
 
 /* === TEAM GALLERY SECTION === */
 .team-gallery h2 {
@@ -344,7 +345,7 @@ main h2 {
     font-size: 0.95rem;
 }
 
-/* Responsivo */
+/* Responsivo 
 @media (max-width: 768px) {
     .figures-container figure {
         width: 45%;
@@ -356,6 +357,7 @@ main h2 {
         width: 100%;
     }
 }
+*/
 
 /* === GRID SECTION (Home) === */
 .grid-section {
