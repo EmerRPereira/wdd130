@@ -1,21 +1,25 @@
-:root { --primary-color: #055a05;
-        --secondary-color: #f4a261;
-        --accent1-color: #264653;
-        --accent2-color: #e9c46a;
-        --heading-font: 'Times New Roman', 'Georgia', serif;
-        --body-font: Arial, Helvetica, sans-serif;
-        --contrast-adjust: #0a0a0a;;
+:root { 
+    --primary-color: #055a05;
+    --secondary-color: #f4a261;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
+    --heading-font: 'Times New Roman', 'Georgia', serif;
+    --body-font: Arial, Helvetica, sans-serif;
+    --contrast-adjust: #0a0a0a;;
 }
 
-* { box-sizing: border-box; 
+* { 
+    box-sizing: border-box; 
     margin: 0; 
     padding: 0;
 } 
 
-header li a { color:aliceblue; 
+header li a { 
+    color:aliceblue; 
 }
 
-header { position: fixed; 
+header { 
+    position: fixed; 
     top: 0; 
     left: 50%; 
     transform: translateX(-50%); /* centralizes the header */ 
@@ -29,45 +33,53 @@ header { position: fixed;
     z-index: 1000; /* always above the content */ 
 } 
 
-header img.logo { width: 120px; 
+header img.logo { 
+    width: 120px; 
     height: auto; 
     border-radius: 6px; 
 } 
 
-body { margin: 0; 
+body { 
+    margin: 0; 
     padding: 0; 
     font-family: var(--body-font); 
 } 
 
-main { margin-top: 180px; /* creates space below the fixed header */ 
+main { 
+    margin-top: 180px; /* creates space below the fixed header */ 
     max-width: 840px; 
     margin-left: auto; 
     margin-right: auto; 
     color: #060606; 
 } 
 
-header nav a { color: aliceblue; 
+header nav a { 
+    color: aliceblue; 
     text-decoration: none; 
     font-weight: bold; 
 } 
 
-header nav a:hover { color: var(--accent2-color); 
+header nav a:hover { 
+    color: var(--accent2-color); 
 } 
 
-header nav ul { list-style: none; 
+header nav ul { 
+    list-style: none; 
     display: flex; 
     gap: 25px; 
     margin: 0; 
     padding: 0; 
 } 
 
-header, footer, main { color: #060606; 
+header, footer, main { 
+    color: #060606; 
     max-width: 840px; 
     margin: 0 auto; 
     width: 100%; 
 } 
 
-h1 { position: relative; 
+h1 { 
+    position: relative; 
     margin-top: 100px; 
     z-index: 1; 
     width: 100%; 
@@ -77,7 +89,8 @@ h1 { position: relative;
     background-color: var(--accent2-color); 
 } 
 
-h1, h2 { font-family: var(--heading-font); 
+h1, h2 { 
+    font-family: var(--heading-font); 
     color: var(--contrast-adjust); 
 } 
 
@@ -85,48 +98,55 @@ nav, p, section, article {
     padding: 8px; margin: 16px; 
 } 
 
-nav ul { list-style: none; 
+nav ul { 
+    list-style: none; 
     display: flex; 
     gap: 40px; 
     margin: 0; 
     padding: 0; 
 } 
 
-footer { background-color: var(--primary-color); 
+footer { 
+    background-color: var(--primary-color); 
     color: var(--accent2-color); 
     padding: 16px; display: flex; 
     justify-content: space-between; 
     align-items: center; 
 } 
 
-footer .socialmedia { display: flex; 
+footer .socialmedia { 
+    display: flex; 
     justify-content: flex-end; 
     gap: 15px; 
 } 
 
-.socialmedia a{ text-decoration: none; 
+.socialmedia a{ 
+    text-decoration: none; 
 } 
 
-.socialmedia img{ width: 32px; 
+.socialmedia img{ 
+    width: 32px; 
     height: auto; 
     margin: 0 10px; 
 } 
 
 /* HERO - use as background image; content overlays naturally (no absolute h1/article) */ 
-.hero { position: relative; 
+.hero { 
+    position: relative; 
     width: 100%; 
     height: 400px; 
     border-radius: 10px; 
     overflow: hidden; 
 } 
 
-.hero img { width: 100%; 
+/*.hero img { width: 100%; 
     height: 100%; 
     object-fit: cover; 
     border-radius: 8px; 
-} 
+} */
 
-.hero img.hero-img { width: 100%; 
+.hero img.hero-img { 
+    width: 100%; 
     height: 100%; 
     object-fit: cover; /* image fills without distortion */ 
     border-radius: 10px; 
@@ -146,7 +166,8 @@ footer .socialmedia { display: flex;
     text-align: center;
 }
 
-.hero-article { position: absolute; 
+.hero-article { 
+    position: absolute; 
     top: 60%;
     left: 50%;
     bottom: 0; 
@@ -160,29 +181,34 @@ footer .socialmedia { display: flex;
     z-index: 1; 
 } 
 
-.logo { float: right; 
+.logo { 
+    float: right; 
     max-width: 150px; 
     height: auto; 
 } 
 
-.history { display: grid; 
+.history { 
+    display: grid; 
     grid-template-columns: 1fr 2fr; 
     gap: 20px; 
     align-items: center; 
 } 
 
-.history img { width: 100%; 
+.history img { 
+    width: 100%; 
     height: auto; 
     border-radius: 8px; 
 } 
 
 /* === CONTACT PAGE LAYOUT === */ 
-.contact-description { text-align: center; 
+.contact-description { 
+    text-align: center; 
     margin: 2rem auto; 
     max-width: 700px; 
 } 
 
-.contact-description h2 { color: var(--primary-color); 
+.contact-description h2 { 
+    color: var(--primary-color); 
     margin-bottom: 0.5rem; 
 } 
 
@@ -206,7 +232,8 @@ footer .socialmedia { display: flex;
 }
 
 /* === FORM STYLES === */ 
-.contact-form { display: flex; 
+.contact-form { 
+    display: flex; 
     flex-direction: column; 
     gap: 1rem; background-color: #f8f8f8;
     padding: 1.5rem; 
@@ -214,13 +241,14 @@ footer .socialmedia { display: flex;
     box-shadow: 0 0 10px rgba(0,0,0,0.1); 
 } 
 
-.contact-form label { font-weight: bold; 
+.contact-form label { 
+    font-weight: bold; 
     color: var(--accent1-color);
  } 
  
- .contact-form input[type="text"], 
- .contact-form input[type="email"], 
- .contact-form textarea { 
+.contact-form input[type="text"], 
+.contact-form input[type="email"], 
+.contact-form textarea { 
     width: 100%; 
     padding: 0.6rem; 
     border: 1px solid #ccc; 
@@ -240,7 +268,7 @@ main h2 {
     margin-bottom: 1rem;
   }
 
-  .visually-hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -261,13 +289,13 @@ main h2 {
     align-items: flex-start; /* aligns to the left */
   }
   
-  .contact-form fieldset legend {
+.contact-form fieldset legend {
     font-weight: bold;
     margin-bottom: 0.5rem;
   }
   
   /* Each label is a line, with the button and text side by side. */
-  .contact-form fieldset label {
+.contact-form fieldset label {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem; /* space between the button and text */
@@ -275,7 +303,7 @@ main h2 {
     cursor: pointer;
   }
   
-  .contact-form fieldset input[type="radio"] {
+.contact-form fieldset input[type="radio"] {
     appearance: auto;          /* guarantees the system's default style */
     transform: scale(1.2);     /* standardizes the size of the balls */
     margin: 0;
@@ -431,30 +459,30 @@ main h2 {
 
 /* === TABELA DE RESUMO DE TRIPS === */
 .trip-summary {
-  margin: 2rem auto;
-  max-width: 800px;
-  text-align: center;
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: center;
 }
 
 .trip-summary table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .trip-summary th, .trip-summary td {
-  border: 1px solid #ccc;
-  padding: 0.8rem;
+    border: 1px solid #ccc;
+    padding: 0.8rem;
 }
 
 .trip-summary th {
-  background-color: var(--primary-color);
-  color: white;
-  font-weight: bold;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
 }
 
 .trip-summary tr:nth-child(even) {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
